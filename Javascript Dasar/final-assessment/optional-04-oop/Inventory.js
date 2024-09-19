@@ -20,7 +20,9 @@ class Inventory {
 
   // Method removeItem untuk menghapus item berdasarkan nilai id nya
   removeItem(id) {
-    this.items = this.items.filter((item) => item.id !== id);
+    const index = this.items.findIndex((item) => item.id === id);
+    this.items.splice(index, 1);
+    // this.items = this.items.filter((item) => item.id !== id);
   }
 
   // Method listItems untuk menampilkan informasi detail dari semua item yang ada di list

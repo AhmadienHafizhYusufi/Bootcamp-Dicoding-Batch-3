@@ -1,0 +1,171 @@
+.main-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Mengatur header dengan flexbox */
+header {
+  display: flex; /* Mengaktifkan flexbox */
+  align-items: center; /* Menyelaraskan item secara vertikal di tengah */
+  justify-content: space-between; /* Memberi ruang di antara element */
+  padding: 10px 20px; /* Memberi padding header */
+  background-color: #333; /* Warna latar belakang header */
+  color: white; /* Warna text pada header */
+}
+
+header h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
+  font-size: 24;
+  margin: 0;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Mengatur ul dengan flexbox */
+.navbar {
+  display: flex; /* Mengaktifkan flexbox */
+  list-style: none; /* Menghapus bullet points */
+  padding: 0; /* Menghapus padding */
+  margin: 0; /* Menghapus margin */
+}
+
+/* Mengatur gaya untuk li */
+.navbar li {
+  margin: 0; /* Menghapus margin di sekitar item */
+}
+
+/* Mengatur gaya untuk link */
+.navbar li a {
+  color: white; /* Warna text */
+  text-decoration: none; /* Mengahpus garis bawah */
+  padding: 8px 12px; /* Memberi padding pada link */
+  transition: background-color 0.3s; /* Transisi halus untuk hover */
+}
+
+/* Hover effect untuk link */
+.navbar li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Mengatur .section-1 dengan Flexbox ke bawah */
+.section-1 {
+  flex: 1; /* 1 bagian dari total lebar */
+  padding: 20px; /* Padding di dalam elemen */
+  background-color: #f5f5f5; /* Warna latar belakang */
+  box-sizing: border-box; /* Memasukkan padding dalam perhitungan lebar */
+}
+
+/* Mengatur form untuk membuat elemen sejajar */
+.input-section form {
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-direction: column; /* Menyusun elemen input secara vertikal */
+  gap: 15px; /* Jarak antar elemen form */
+  width: 100%; /* Lebar penuh */
+  max-width: 400px; /* Batas lebar */
+}
+
+/* Mengatur setiap grup input agar label dan input sejajar */
+.input-section form > div {
+  display: flex; /* Mengaktifkan Flexbox */
+  flex-direction: column; /* Menyusun label dan input secara vertikal */
+}
+
+/* Mengatur checkbox dan tombol agar sejajar */
+.checkbox-and-submit {
+  display: flex; /* Mengaktifkan flexbox */
+  flex-direction: row !important;
+  align-items: center; /* Menyelaraskan element secara vertical di tengah */
+  background-color: #4caf50; /* Warna latar belakang hijau */
+  border-radius: 4px; /* Membuat sudut border menjadi melengkung */
+  padding: 10px 15px; /* Memberikan padding di sekitar */
+  gap: 0; /* Menghilangkan jarak antara checkbox dan tombol */
+  cursor: pointer; /* Ganti cursor saat hover */
+  box-sizing: border-box; /* Menyertakan padding dalam perhitungan lebar */
+}
+
+/* Mengatur checkbox agar berada di kiri */
+.checkbox-and-submit input[type="checkbox"] {
+  margin: 0; /* Menghilangkan margin */
+  margin-right: -4px; /* Mengurangi margin sebelah kanan agar menempel */
+  width: 18px; /* Lebar kotak checkbox */
+  height: 18px; /* Tinggi kotak checkbox */
+  cursor: pointer; /* Ganti cursor saat hover */
+  background-color: white; /* Warna background putih */
+}
+
+/* Mengatur tombol agar berada di kanan */
+.checkbox-and-submit button {
+  flex-grow: 1; /* Membuat tombol mengisi ruang yang tersedia */
+  display: flex; /* Mengatur layout tombol dengan flexbox */
+  align-items: center; /* Menyelaraskan teks di tengah */
+  justify-content: center; /* Menyelaraskan teks di tengah */
+  background-color: inherit; /* Mengambil warna dari parent */
+  color: white; /* Warna text menjadi putih */
+  font-weight: bold; /* Membuat text jadi bold */
+  border: none; /* Menghilangkan border */
+  padding: 10px 15px; /* Memberikan padding */
+  cursor: pointer; /* Mengganti cursor ketik hover */
+  border-radius: 4px; /* Membuat border melengkung */
+  min-width: 200px; /* Lebar minimal untuk tombol */
+  box-sizing: border-box; /* Menyertakan padding dalam perhitungan lebar */
+}
+
+.checkbox-and-submit button span {
+  margin-left: 5px; /* Jarak kecil antara teks dan span*/
+}
+
+/* Styling tambahan untuk input dan tombol */
+.input-section label {
+  margin-bottom: 5px; /* Jarak antara label dan input */
+}
+
+.input-section input[type="text"],
+.input-section input[type="number"] {
+  padding: 8px; /* Padding untuk input */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 4px; /* Sudut melengkung */
+}
+
+.input-section input[type="checkbox"] {
+  margin-right: 5px; /* Jarak antara checkbox dan tombol */
+}
+
+.input-section button {
+  padding: 10px 20px; /* Padding untuk tombol */
+  background-color: #4caf50; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  border: none; /* Menghapus border */
+  border-radius: 4px; /* Sudut melengkung */
+  cursor: pointer; /* Ganti kursor saat hover */
+  transition: background-color 0.3s; /* Transisi untuk hover */
+}
+
+.input-section button:hover {
+  background-color: #45a049; /* Warna latar belakang saat hover */
+}
+
+.section-2 {
+  flex: 3; /* 3 bagian dari total lebar */
+  padding: 20px; /* Padding di dalam elemen */
+  background-color: #f5f5f5; /* Warna latar belakang berbeda */
+  box-sizing: border-box; /* Memasukkan padding dalam perhitungan lebar */
+}
+
+.section-3 {
+  display: flex; /* Mengaktifkan flexbox */
+  justify-content: space-between; /* Beri jarak antara section */
+  gap: 20px; /* Jarak antar section */
+}
+
+.section-3 section {
+  flex: 1; /* Membuat kedua section memeiliki ukuran yang sama*/
+  padding: 20px; /* Memberi padding dalam section */
+  background-color: #c0c0c0; /* Warna background untuk pemisahan visual */
+  border: 1px solid #ddd; /* Menambahkan border */
+  border-radius: 8px; /* Border melengkung */
+}

@@ -11,7 +11,7 @@ function addOrder(customerName, items) {
   const newOrder = {
     id: generateUniqueId(),
     customerName,
-    items,
+    items: [...items],
     totalPrice: items.reduce((total, item) => total + item.price, 0),
     status: "Menunggu",
   };
@@ -20,9 +20,9 @@ function addOrder(customerName, items) {
 
 // TODO: selesaikan fungsi updateOrderStatus
 function updateOrderStatus(orderId, status) {
-  const order = orders.find((order) => order.id === orderId);
-  if (order) {
-    order.status = status;
+  const order = orders.findIndex((order) => order.id === orderId);
+  if (orders[order]) {
+    orders[order].status = status;
   }
 }
 
@@ -35,8 +35,13 @@ function calculateTotalRevenue() {
 
 // TODO: selesaikan fungsi deleteOrder
 function deleteOrder(id) {
+  //const index = orders.findIndex((order) => order.id === id);
+  //orders.splice(index, 1);
   orders = orders.filter((order) => order.id !== id);
+  //return index;
 }
+
+//console.log(deleteOrder("_w1w0n8y"));
 
 export {
   orders,

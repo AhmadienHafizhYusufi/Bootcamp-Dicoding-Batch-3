@@ -14,8 +14,7 @@ console.log(inventory.listItems());
 /**
  * Output yang diharapkan:
  * Initial Inventory:
- * ID: 1, Name: Laptop, Quantity: 10, Price: 1000
- * ID: 2, Name: Mouse, Quantity: 50, Price: 20
+ * ID: 1, Name: Laptop, Quantity: 10, Price: 1000, ID: 2, Name: Mouse, Quantity: 50, Price: 20
  */
 
 item1.updateDetails("Laptop", 8, 950);
@@ -29,7 +28,7 @@ console.log(inventory.listItems());
  * ID: 2, Name: Mouse, Quantity: 50, Price: 20
  */
 
-inventory.removeItem(2);
+inventory.removeItem(0);
 console.log("\nInventory after removal:");
 console.log(inventory.listItems());
 

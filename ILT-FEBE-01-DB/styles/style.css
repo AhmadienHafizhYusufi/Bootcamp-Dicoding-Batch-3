@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+}
+
+.nav-list {
+  list-style: none;
+  padding-inline-start: 0;
+
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+main .hero {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+main .hero .hero-content {
+  flex-grow: 1;
+}
+
+main .hero .hero-content button {
+  background-color: green;
+  padding: 8px 16px;
+
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
+
+main .hero .hero-content button:hover {
+  cursor: pointer;
+}
+
+main .hero .hero-image {
+  flex-basis: 40%;
+}
+
+main .hero .hero-image img {
+  width: 100%;
+}
+
+@media screen {
+}
