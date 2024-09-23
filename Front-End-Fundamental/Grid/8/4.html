@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implicit Column Row</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 5em 100px 30%;
+        grid-auto-rows: 150px 200px;
+
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div style="background-color: lightsalmon" class="box1"></div>
+        <div style="background-color: lightblue" class="box2"></div>
+        <div style="background-color: lightgreen" class="box3"></div>
+        <div style="background-color: lightpink" class="box4"></div>
+        <div style="background-color: lightgray" class="box5"></div>
+        <div style="background-color: lightseagreen" class="box6"></div>
+        <div style="background-color: lightsteelblue" class="box7">
+          Ukuran row-ku sebesar isi kontennya
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

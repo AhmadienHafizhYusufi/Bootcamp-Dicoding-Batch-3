@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Column Writing Mode Direction</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns:
+          [kiri] 5em
+          [tengah1] 100px
+          [tengah2] 30px
+          [kanan];
+
+        gap: 10px;
+      }
+
+      .container.writing-mode {
+        writing-mode: horizontal-tb;
+
+        direction: ltr;
+      }
+
+      [class^="box"] {
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div style="background-color: lightsalmon" class="box1"></div>
+        <div style="background-color: lightblue" class="box2"></div>
+        <div style="background-color: lightgreen" class="box3"></div>
+        <div style="background-color: lightpink" class="box4"></div>
+      </div>
+    </main>
+  </body>
+</html>
