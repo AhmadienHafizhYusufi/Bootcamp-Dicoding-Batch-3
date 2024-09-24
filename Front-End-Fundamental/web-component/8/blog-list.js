@@ -20,13 +20,13 @@ class BlogList extends HTMLElement {
 
   updateStyle() {
     this._style.textContent = `
-        blog-list {
-          display: grid;
-  
-          grid-template-columns: 1fr 1fr;
-          gap: 1rem;
-        }
-      `;
+      blog-list {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+    `;
   }
 
   render() {

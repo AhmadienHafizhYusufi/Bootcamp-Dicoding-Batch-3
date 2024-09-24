@@ -1,3 +1,5 @@
+import "./blog-item.js";
+
 const blogs = [
   {
     id: 1,
